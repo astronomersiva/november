@@ -1,6 +1,7 @@
 {{#let (concat "slides/slide-" @slide) as |Slide|}}
   <Slide
     @speaker={{@speaker}}
+    @play={{@play}}
     class="
       {{concat "slide-" @slide}}
       {{if @speaker "hidden md:flex w-3/4" "flex"}}

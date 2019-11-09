@@ -1,10 +1,24 @@
-<Background
-  @image="/images/party.jpg"
+<div
   ...attributes
+  class="slide-bordered"
 >
-  <h1 class="text-black p-3 px-8 text-6xl rounded">
-    Want to try this out?
-  </h1>
-</Background>
+  <div class="flex flex-wrap">
+    <div class="w-1/3 ml-auto border-solid border-2 border-gray-400 border-r-0">
+      <img src="/images/siva.jpg" alt="Siva standing in front of a mountain with a rucksack">
+    </div>
+    <div class="w-1/3 mr-auto flex flex-wrap justify-center items-center bg-gray-100 border-solid border-2 border-gray-300 border-l-0">
+      <div class="text-center">
+        <h1 class="text-3xl">Sivasubramanyam A</h1>
+        <h2>Developer at Zoho</h2>
+        <p>
+          {{svg-jar "twitter" class="icon align-middle"}} sivasupermanyam
+          -
+          {{svg-jar "github" class="icon align-middle"}}  astronomersiva
+        </p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
 
 {{yield this}}

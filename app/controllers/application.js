@@ -6,7 +6,8 @@ export default class ApplicationController extends Controller {
   queryParams = [
     'slide',
     'speaker',
-    'download'
+    'download',
+    'play'
   ];
 
   @service presentation;
@@ -14,4 +15,5 @@ export default class ApplicationController extends Controller {
   @tracked speaker;
   @tracked slide;
   @tracked download;
+  @tracked play;
 }
